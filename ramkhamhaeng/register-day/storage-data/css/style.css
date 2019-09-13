@@ -1,0 +1,79 @@
+
+
+/* input.showCode {
+    font-size: 100%;
+} */
+
+.Date1 {
+    border-color: red;
+    color: red;
+    font-size: 150%;
+}
+
+.Date2 {
+    border-color: blue;
+    color: blue;
+    font-size: 150%;
+}
+
+.Date3 {
+    border-color: green;
+    color: green;
+    font-size: 150%;    
+}
+
+.Date4 {
+    border-color: #0C090A;
+    color: #0C090A;
+    font-size: 150%;    
+}
+
+@font-face {
+    font-family: PrintAble4U;
+    src: url('../../../lib/font/PrintAble4U.ttf')format('truetype');
+}
+
+.date-select {
+    font-family: 'PrintAble4U', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: wavy;
+}
+
+body {
+    font-family: 'PrintAble4U';
+    /*font-size: 100%;
+     line-height: 1.5rem;
+    letter-spacing: 0.8rem; */
+}
+
+.adfirst,
+table , ul{
+    min-width: 100px;
+    text-align: left;
+    font-size: 1.4em;
+}
+
+tr.border1 td {
+    border-top: 2pt solid black;
+}
+
+body {
+    padding-top: 60px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+}
+
+/* thead th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+} */
+
+.showCode {
+    text-align: center;
+    font-size: 80%;
+}

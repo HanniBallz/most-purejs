@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../lib/img/favicon.ico" type="image/x-icon">
+
+    <!-- jQuery library -->
+    <script src="../lib/js/jquery-3.3.1.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../lib/css/bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../lib/css/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+
+    <!--Alert Template -->
+    <script src="../lib/js/sweetalert.js"></script>
+
+    <!--Icon Font Awesome -->
+    <script src="../lib/js/font-awesome-5-all.js"></script>
+
+    <!--My Customize-->
+    <link href="../lib/css/my-css/register-day.css?ver=00091" rel="stylesheet">
+    <title>คิดราคารวมเทอมซ่อม</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <select class="form-control" id="regis_date">
+                    <option value="no">สำหรับลงวันที่</option>
+                </select>
+            </div>
+
+            <div class="col-md" style="text-align: center">
+                <h3>คิดราคารวมเทอม<span class="thisterm">ซ่อม</span></h3>
+            </div>
+
+            <div class="col-md">
+                <a href="storage-data/index.html" class="noprint">
+                    <h4 style="position: absolute; right: 0;">บันทึกช่วงรหัสและวันลงทะเบียน
+                        <i class="fas fa-arrow-alt-circle-right"></i>
+                    </h4>
+                </a>
+
+            </div>
+        </div>
+        <br>
+        <div class="table-responsive-md table-hover">
+            <table class="table">
+                <thead>
+                    <tr class="table-active">
+                        <th width="5%">ลำดับ </th>
+                        <th width="14%">รหัสนักศึกษา </th>
+                        <th width="22%">ชื่อ - นามสกุล </th>
+                        <th>หน่วยกิต </th>
+                        <th width="13%">วันลงทะเบียน </th>
+                        <th>ค่าปรับ </th>
+                        <th class="" style="display: none;"></th>
+                        <th width="10%">ราคา </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">
+                            <h3>ราคารวม</h3>
+                        </td>
+                        <td colspan="2"><input class="grandtotal"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="input-group mb-3">
+            <button type="button" id="clear" class="btn btn-outline-danger"><i class="fas fa-toilet"></i> Clear</button>
+            <button type="button" id="save" class="btn btn-outline-success" style="position: absolute; right: 0;"><i
+                    class="fas fa-check-circle"></i> Print</button>
+        </div>
+
+    </div>
+    <script src="../lib/js/my-js/create-dom-regisday.js?ver=00021"></script>
+    <script src="../lib/js/my-js/resgister-day-function.js?ver=00021"></script>
+</body>
+
+</html>

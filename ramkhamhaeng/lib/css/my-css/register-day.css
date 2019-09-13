@@ -1,0 +1,65 @@
+@font-face {
+    font-family: PrintAble4U;
+    src: url('../../font/PrintAble4U.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: SALMON;
+    src: url('../../font/SALMON.ttf')format('truetype');
+}
+
+@media print {
+
+    [placeholder],
+    .noprint,
+    #save,
+    #clear {
+        display: none;
+    }
+}
+
+table {
+    font-family: 'PrintAble4U', sans-serif;
+    font-size: 150%;
+}
+
+#regis_date {
+    font-family: 'PrintAble4U';
+    border: none;
+    font-size: 22px;
+    width: 50%;
+}
+
+table input {
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'PrintAble4U', Helvetica, sans-serif;
+}
+
+body {
+    font-family: 'PrintAble4U', Helvetica, sans-serif;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+
+table :not(.total) :not(.grandtotal) {
+    text-align: center;
+}
+
+.keepcost,
+.datefee {
+    color: red;
+}
+
+.total,
+.grandtotal {
+    text-align: right;
+}
+
+.grandtotal {
+    font-size: 120%;
+    color: red;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>บันทึกรหัสและวันลงทะเบียน</title>
+	<link rel="icon" href="../../lib/img/favicon.ico" type="image/x-icon">
+	<!-- jQuery library -->
+	<script src="../../lib/js/jquery-3.3.1.min.js"></script>
+
+	<!-- Bootstrap core CSS -->
+	<link href="../../lib/css/bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<script src="../../lib/css/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+
+	<!-- Sweet Alert -->
+	<script src="../../lib/js/sweetalert.js"></script>
+
+	<!-- Custom fonts for this template -->
+	<script src="../../lib/js/font-awesome-5-all.js"></script>
+
+	<link rel="stylesheet" href="css/jquery.dateselect.css">
+	<link rel="stylesheet" href="css/style.css?ver=0021">
+
+</head>
+
+<body>
+	<div class="container">
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="nav">
+			<!-- Links -->
+			<ul class="navbar-nav">
+				<!-- Dropdown -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						เลือกเทอมลงทะเบียน
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="../major-term.html">1-2</a>
+						<a class="dropdown-item" href="../summer-term.html">Summer</a>
+						<a class="dropdown-item" href="../repair-term.html">ซ่อม</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<!-- Dropdown -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						ไปวัน
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#head">แรก <i class="far fa-dizzy"></i></a>
+						<a class="dropdown-item" href="#pre-Last-day1">สอง <i class="far fa-dizzy"></i></a>
+						<a class="dropdown-item" href="#pre-Last-day2">สาม <i class="far fa-dizzy"></i></a>
+						<a class="dropdown-item" href="#pre-Last-day3">สุดท้าย <i class="far fa-dizzy"></i></a>
+					</div>
+				</li>
+			</ul>
+
+		</nav>
+
+		<div class="table-responsive-md table-hover">
+			<table class="table">
+				<thead>
+					<tr class="table-active sticky" id="head">
+						<th width="20%">คณะ</th>
+						<th width="50%" style="text-align: center">ช่วงรหัสนักศึกษา</th>
+						<th width="25%" style="text-align: center">วันลงทะเบียนเรียน</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+		</div>
+		<div class="input-group mb-3">
+			<button type="button" id="clear" class="btn btn-outline-danger"><i class="fas fa-toilet"></i> Clear</button>
+			<button type="button" id="save" class="btn btn-outline-success" style="position: absolute; right: 0;">
+				<i class="fas fa-check-circle"></i> Save</button>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery-1.8.0.min.js">
+	</script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script>
+	<script src="js/set-get-item.js?ver=000116"></script>
+	<script type="text/javascript" src="js/jquery.dateselect.js?ver=0005"></script>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$.extend(true, $.dateSelect.defaults, {
+				callbacks: {
+					onShow: function () {
+						$('html, body').css('overflow', 'hidden');
+					},
+					onHide: function () {
+						$('html, body').css('overflow', 'auto');
+					}
+				}
+			});
+			/*
+				$('.btn-date').on('click', function(e) {
+					e.preventDefault();
+					$.dateSelect.show({
+						element: 'input[name="date2"]'
+					});
+				});
+			*/
+		});
+	</script>
+</body>
+
+</html>
